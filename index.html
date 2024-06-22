@@ -12,7 +12,8 @@
             padding: 0;
         }
         .page {
-            width: 8.5in;
+            width: 100%;
+            max-width: 8.5in;
             height: 11in;
             padding: 1in;
             box-sizing: border-box;
@@ -47,6 +48,23 @@
             right: 1in;
             font-size: 18px;
             color: #000000;
+        }
+        @media (max-width: 600px) {
+            .title {
+                font-size: 24px;
+            }
+            .slide-title {
+                font-size: 18px;
+            }
+            .content {
+                font-size: 14px;
+            }
+            .bottom-text {
+                font-size: 14px;
+                bottom: 0.5in;
+                left: 0.5in;
+                right: 0.5in;
+            }
         }
     </style>
 </head>
