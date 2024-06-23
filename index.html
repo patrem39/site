@@ -25,11 +25,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
             max-width: 600px;
-            margin-bottom: 20px;
+            margin: 20px 0; /* Отступ сверху и снизу */
             height: 400px; /* Фиксированная высота для всех блоков */
             display: flex;
             flex-direction: column;
             justify-content: center; /* Центровка текста по вертикали */
+            align-items: center; /* Центровка текста по горизонтали */
         }
         h2 {
             color: #003366;
@@ -39,6 +40,11 @@
             font-size: 16px; /* Уменьшенный размер шрифта для текста */
             line-height: 1.4;
             flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0; /* Убрать отступы */
+            text-align: center; /* Центровка текста */
         }
         .highlight {
             color: #007BFF;
