@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 0;
+            margin: 20px 0;
             background-color: #f4f4f9;
         }
         .page {
@@ -26,13 +26,19 @@
             position: relative;
             max-width: 600px;
             margin-bottom: 20px;
+            height: 400px; /* Фиксированная высота для всех блоков */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         h2 {
             color: #003366;
+            font-size: 24px; /* Уменьшенный размер шрифта для заголовков */
         }
         p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 16px; /* Уменьшенный размер шрифта для текста */
+            line-height: 1.4;
+            flex-grow: 1;
         }
         .highlight {
             color: #007BFF;
@@ -101,4 +107,3 @@
     </div>
 </body>
 </html>
-``` &#8203;:citation[oaicite:0]{index=0}&#8203;
