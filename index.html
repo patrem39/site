@@ -25,16 +25,19 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
             max-width: 600px;
-            margin: 20px 0; /* Отступ сверху и снизу */
+            margin: 20px; /* Отступ сверху и снизу */
             height: 400px; /* Фиксированная высота для всех блоков */
             display: flex;
             flex-direction: column;
             justify-content: center; /* Центровка текста по вертикали */
             align-items: center; /* Центровка текста по горизонтали */
+            box-sizing: border-box; /* Учет padding в общей ширине и высоте */
         }
         h2 {
             color: #082570;
             font-size: 24px; /* Уменьшенный размер шрифта для заголовков */
+            margin: 0 0 10px; /* Убрать отступы */
+            padding: 0; /* Убрать отступы */
         }
         p {
             font-size: 16px; /* Уменьшенный размер шрифта для текста */
@@ -44,7 +47,9 @@
             align-items: center;
             justify-content: center;
             margin: 0; /* Убрать отступы */
+            padding: 0 10px; /* Увеличить внутренние отступы */
             text-align: center; /* Центровка текста */
+            box-sizing: border-box; /* Учет padding в общей ширине и высоте */
         }
         .highlight {
             color: #004299;
