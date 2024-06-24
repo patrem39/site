@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тёмная сторона СДВГ</title>
+    <title>Секретные поведения СДВГ (часть 2)</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
     <style>
@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 0;
+            margin: 20px 0;
             background-color: #f4f4f9;
         }
         .page {
@@ -25,17 +25,35 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
             max-width: 600px;
-            margin-bottom: 20px;
+            margin: 20px; /* Отступ сверху и снизу */
+            height: auto; /* Высота будет определяться содержимым */
+            min-height: 400px; /* Минимальная высота для блоков */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центровка текста по вертикали */
+            align-items: center; /* Центровка текста по горизонтали */
+            box-sizing: border-box; /* Учет padding в общей ширине и высоте */
         }
         h2 {
-            color: #007bff;
+            color: #082570;
+            font-size: 24px; /* Уменьшенный размер шрифта для заголовков */
+            margin: 0 0 10px; /* Убрать отступы */
+            padding: 0; /* Убрать отступы */
         }
         p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 16px; /* Уменьшенный размер шрифта для текста */
+            line-height: 1.4;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0; /* Убрать отступы */
+            padding: 20px; /* Увеличить внутренние отступы */
+            text-align: center; /* Центровка текста */
+            box-sizing: border-box; /* Учет padding в общей ширине и высоте */
         }
         .highlight {
-            color: #007bff;
+            color: #004299;
             font-weight: bold;
         }
         .divider {
@@ -59,38 +77,44 @@
 </head>
 <body>
     <div class="page">
-        <h2>Социальное молчание</h2>
+        <h2>СДВГ и отношения</h2>
         <div class="divider"></div>
-        <p>Мы стараемся быть <span class="highlight">тихими в обществе</span>, чтобы не мешать другим. Это приводит к чувству <span class="highlight">одиночества и недопонимания</span>.</p>
-        <div class="source">@maju_govnom_steni</div>
+        <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Горе</h2>
+        <h2>Смешанные сигналы близости</h2>
         <div class="divider"></div>
-        <p>Трудности с восприятием <span class="highlight">постоянства вещей</span> усложняют процесс <span class="highlight">горевания</span>. Когда кого-то нет рядом физически, кажется, что их вообще не существует, и из-за этого трудно переживать утрату.</p>
-        <div class="source">@maju_govnom_steni</div>
+        <p>Мы не всегда хотим, чтобы нас <span class="highlight">трогали</span> или <span class="highlight">беспокоили</span>, но в то же время жаждем <span class="highlight">близости</span>. Это тонкий <span class="highlight">баланс</span> между необходимостью <span class="highlight">пространства</span> и желанием быть рядом.</p>
+        <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Синдром дефицита вознаграждения</h2>
+        <h2>Рассеянное внимание</h2>
         <div class="divider"></div>
-        <p>Наш мозг нуждается в <span class="highlight">дофамине</span>, из-за чего мы склонны к <span class="highlight">азартным играм, наркотикам</span> и <span class="highlight">рискованному поведению</span>, стремясь получить вознаграждение.</p>
-        <div class="source">@maju_govnom_steni</div>
+        <p>Мы не всегда можем быть полностью <span class="highlight">вовлечены</span> в разговор, потому что мысли могут уносить нас. Однако, когда нас не <span class="highlight">слушают</span>, нам становится <span class="highlight">неприятно</span>.</p>
+        <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Забывание близких</h2>
+        <h2>Жажда стимуляции</h2>
         <div class="divider"></div>
-        <p>Мы можем забывать о <span class="highlight">друзьях и родственниках</span>, если не поддерживаем с ними контакт. Это не значит, что нам всё равно, просто они выпадают из наших текущих мыслей.</p>
-        <div class="source">@maju_govnom_steni</div>
+        <p>Мы постоянно ищем <span class="highlight">стимуляции</span> из-за низкого уровня <span class="highlight">дофамина</span>, но если её слишком много, это может нас <span class="highlight">перегрузить</span> и привести к <span class="highlight">замыканию</span>.</p>
+        <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Слепота к времени</h2>
+        <h2>Импульсивные действия</h2>
         <div class="divider"></div>
-        <p>У нас проблемы с восприятием <span class="highlight">времени</span>, мы теряем его ощущение и забываем о <span class="highlight">сроках и встречах</span>.</p>
-        <div class="source">@maju_govnom_steni</div>
+        <p>Мы действуем <span class="highlight">импульсивно</span> и часто делаем всё в последний момент, но если попытаться что-то <span class="highlight">изменить</span> или <span class="highlight">спланировать</span>, это вызывает <span class="highlight">стресс</span> и <span class="highlight">раздражение</span>.</p>
+        <div class="source">@myadhdventure</div>
+        <div class="arrow">→</div>
+    </div>
+    <div class="page">
+        <h2>Любовь-ненависть к рутине</h2>
+        <div class="divider"></div>
+        <p>Мы ненавидим <span class="highlight">рутину</span> и <span class="highlight">структуру</span>, но без неё чувствуем себя <span class="highlight">потерянными</span>. Важно найти правильный <span class="highlight">баланс</span>.</p>
+        <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
 </body>
