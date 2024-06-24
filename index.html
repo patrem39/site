@@ -10,16 +10,13 @@
         body {
             font-family: 'Montserrat', sans-serif;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 0;
-            padding-top: 20px;
+            margin: 20px 0;
             background-color: #f4f4f9;
         }
         .page {
-            width: 600px;
-            height: 600px;
             page-break-after: always;
             text-align: center;
             background-color: #fff;
@@ -27,23 +24,27 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
-            margin-bottom: 20px;
+            max-width: 600px;
+            margin: 20px 0; /* Отступ сверху и снизу */
+            height: 400px; /* Фиксированная высота для всех блоков */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; /* Центровка текста по вертикали */
+            align-items: center; /* Центровка текста по горизонтали */
         }
         h2 {
             color: #003366;
+            font-size: 24px; /* Уменьшенный размер шрифта для заголовков */
         }
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            flex: 1;
+            font-size: 16px; /* Уменьшенный размер шрифта для текста */
+            line-height: 1.4;
+            flex-grow: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            margin: 0;
+            margin: 0; /* Убрать отступы */
+            text-align: center; /* Центровка текста */
         }
         .highlight {
             color: #007BFF;
@@ -66,47 +67,49 @@
             right: 20px;
             bottom: 20px;
         }
-        @media screen and (max-height: 650px) {
-            .page {
-                height: 100%;
-                max-height: 600px;
-                padding: 10px;
-            }
-            p {
-                font-size: 16px;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="page">
-        <h2>5 секретных поведений СДВГ (часть 2)</h2>
+        <h2 style="color: #003366;">5 секретных поведений СДВГ (часть 2)</h2>
         <div class="divider"></div>
         <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Проблемы с <span class="highlight">дворниками</span></h2>
+        <h2 style="color: #003366;">Проблемы с <span class="highlight">дворниками</span></h2>
         <div class="divider"></div>
         <p>Меня бесят настройки <span class="highlight">дворников</span>, поэтому я просто поднимаю рычаг, когда нужен один взмах. СДВГ делает так, что мы ищем обходные пути для таких мелочей.</p>
         <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Неиспользованные <span class="highlight">блокноты</span></h2>
+        <h2 style="color: #003366;">Неиспользованные <span class="highlight">блокноты</span></h2>
         <div class="divider"></div>
         <p>У меня есть 10 бутылок с водой и 40 <span class="highlight">блокнотов</span>, которые я никогда не использовал. Я всегда думаю, что использую их, но это так и остается в планах.</p>
         <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Сохраненные <span class="highlight">ТикТоки</span></h2>
+        <h2 style="color: #003366;">Сохраненные <span class="highlight">ТикТоки</span></h2>
         <div class="divider"></div>
         <p>У меня куча сохраненных <span class="highlight">ТикТоков</span>, которые я никогда больше не посмотрю. Собирать интересное и не возвращаться к этому - типичное для СДВГ.</p>
         <div class="source">@myadhdventure</div>
         <div class="arrow">→</div>
     </div>
     <div class="page">
-        <h2>Перегрузка <span class="highlight">вкладок</span></h2>
+        <h2 style="color: #003366;">Перегрузка <span class="highlight">вкладок</span></h2>
         <div class="divider"></div>
-        <p>У меня всегда открыто много <span class="highlight">вкладок</span> на компьютере. Попытка д
+        <p>У меня всегда открыто много <span class="highlight">вкладок</span> на компьютере. Попытка делать несколько дел одновременно часто приводит к цифровому хаосу.</p>
+        <div class="source">@myadhdventure</div>
+        <div class="arrow">→</div>
+    </div>
+    <div class="page">
+        <h2 style="color: #003366;">Очистка <span class="highlight">разума</span></h2>
+        <div class="divider"></div>
+        <p>Я не убираюсь, когда дома бардак; я убираюсь, когда в голове <span class="highlight">бардак</span>. Уборка помогает справиться с ментальным хаосом.</p>
+        <div class="source">@myadhdventure</div>
+        <div class="arrow">→</div>
+    </div>
+</body>
+</html>
