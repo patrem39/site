@@ -10,16 +10,13 @@
         body {
             font-family: 'Montserrat', sans-serif;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
             margin: 0;
-            padding-top: 20px;
             background-color: #f4f4f9;
         }
         .page {
-            width: 600px;
-            height: 600px;
             page-break-after: always;
             text-align: center;
             background-color: #fff;
@@ -27,26 +24,18 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
+            max-width: 600px;
             margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
         h2 {
-            color: #003366;
+            color: #007bff;
         }
         p {
             font-size: 18px;
             line-height: 1.6;
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin: 0;
         }
         .highlight {
-            color: #007BFF;
+            color: #007bff;
             font-weight: bold;
         }
         .divider {
@@ -65,16 +54,6 @@
             position: absolute;
             right: 20px;
             bottom: 20px;
-        }
-        @media screen and (max-height: 650px) {
-            .page {
-                height: 100%;
-                max-height: 600px;
-                padding: 10px;
-            }
-            p {
-                font-size: 16px;
-            }
         }
     </style>
 </head>
